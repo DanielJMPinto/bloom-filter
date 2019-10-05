@@ -1,13 +1,17 @@
 package bloom;
 
 import java.io.*;
-
+/**
+ * @brief Bloom filter test class
+ */
 public class Teste1 {
-
+	/**
+	 * @brief Main program
+	 */
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Bloom gutemberg = new Bloom(10000000,100);
-		File file = new File("gutemberg.txt"); 
+		File file = new File("docs/gutemberg.txt"); 
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		String str;
 		while ((str = br.readLine()) != null) {

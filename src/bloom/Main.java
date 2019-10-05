@@ -1,8 +1,14 @@
 package bloom;
 import java.io.*;
-import java.util.*; 
-public class Main {
+import java.util.*;
 
+/** 
+ * @brief Bloom filter main class
+*/
+public class Main {
+	/**
+	 * @brief Main program
+	 */
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -11,7 +17,7 @@ public class Main {
 		Contador count = new Contador();
 		Map<String, ArrayList<String>> playersStats = new HashMap<String, ArrayList<String>>();
 		
-		File file = new File("players.txt"); 
+		File file = new File("docs/players.txt"); 
 		BufferedReader br = new BufferedReader(new FileReader(file)); 
 		int c=0;
 		String str;

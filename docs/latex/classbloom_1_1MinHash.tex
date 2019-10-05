@@ -1,0 +1,153 @@
+\hypertarget{classbloom_1_1MinHash}{}\doxysection{bloom.\+Min\+Hash Class Reference}
+\label{classbloom_1_1MinHash}\index{bloom.MinHash@{bloom.MinHash}}
+
+
+The class \mbox{\hyperlink{classbloom_1_1MinHash}{Min\+Hash}} is used to test the similarity between two insertions of the bloom filter.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbloom_1_1MinHash_aca71435db4eb0d3bd7ff0317ffee3832}{Min\+Hash}} (int \mbox{\hyperlink{classbloom_1_1MinHash_a2d656641bd4312e21a053f9de894b0b9}{k}})
+\item 
+void \mbox{\hyperlink{classbloom_1_1MinHash_ac90bdbce06be39f4be57b96891a567ce}{set\+Keys}} (Set$<$ String $>$ \mbox{\hyperlink{classbloom_1_1MinHash_af2b4e5cd2571774ce61737aee5002587}{keys}})
+\item 
+void \mbox{\hyperlink{classbloom_1_1MinHash_a650ee776efc4cbf5b9fa4cf27d3b985f}{iniciarhash}} ()
+\item 
+int \mbox{\hyperlink{classbloom_1_1MinHash_acb43d67cc2cd2a936d469e591fcf2ad3}{string2hash}} (String str, int \mbox{\hyperlink{classbloom_1_1MinHash_a52674a3888629c927beed153e9c77bec}{a}}, int \mbox{\hyperlink{classbloom_1_1MinHash_a4fb2d424b746bd0295ac97a61f866b55}{b}}, int \mbox{\hyperlink{classbloom_1_1MinHash_acea000f67958220bf0745fd46378b4e2}{p}})
+\item 
+void \mbox{\hyperlink{classbloom_1_1MinHash_a43ada19ac1f8690fc6ff5800fda61eb1}{minhashing}} (Map$<$ String, Array\+List$<$ String $>$$>$ players\+Stats)
+\item 
+void \mbox{\hyperlink{classbloom_1_1MinHash_ac29769ebfcfd03a5cca34d10bf2e7740}{jaccard}} ()
+\item 
+void \mbox{\hyperlink{classbloom_1_1MinHash_a892380e53f15a83426a2d2b7eb4865ad}{similar}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Set$<$ String $>$ \mbox{\hyperlink{classbloom_1_1MinHash_af2b4e5cd2571774ce61737aee5002587}{keys}} = new Hash\+Set$<$String$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classbloom_1_1MinHash_a52674a3888629c927beed153e9c77bec}{a}}
+\begin{DoxyCompactList}\small\item\em Random value to be used in a string to hash function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbloom_1_1MinHash_a4fb2d424b746bd0295ac97a61f866b55}{b}}
+\begin{DoxyCompactList}\small\item\em Random value to be used in a string to hash function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbloom_1_1MinHash_acea000f67958220bf0745fd46378b4e2}{p}} =1221374
+\item 
+int \mbox{\hyperlink{classbloom_1_1MinHash_a2d656641bd4312e21a053f9de894b0b9}{k}}
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbloom_1_1MinHash_a98d26bc934eb16c9accfa49c5947ceab}{minimum}}
+\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbloom_1_1MinHash_ac9ea9508a7ff0a40cc165151cd1fc19e}{jacc}} = new double \mbox{[}500\mbox{]}\mbox{[}500\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class \mbox{\hyperlink{classbloom_1_1MinHash}{Min\+Hash}} is used to test the similarity between two insertions of the bloom filter. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbloom_1_1MinHash_aca71435db4eb0d3bd7ff0317ffee3832}\label{classbloom_1_1MinHash_aca71435db4eb0d3bd7ff0317ffee3832}} 
+\index{bloom.MinHash@{bloom.MinHash}!MinHash@{MinHash}}
+\index{MinHash@{MinHash}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{MinHash()}{MinHash()}}
+{\footnotesize\ttfamily bloom.\+Min\+Hash.\+Min\+Hash (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbloom_1_1MinHash_a650ee776efc4cbf5b9fa4cf27d3b985f}\label{classbloom_1_1MinHash_a650ee776efc4cbf5b9fa4cf27d3b985f}} 
+\index{bloom.MinHash@{bloom.MinHash}!iniciarhash@{iniciarhash}}
+\index{iniciarhash@{iniciarhash}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{iniciarhash()}{iniciarhash()}}
+{\footnotesize\ttfamily void bloom.\+Min\+Hash.\+iniciarhash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_ac29769ebfcfd03a5cca34d10bf2e7740}\label{classbloom_1_1MinHash_ac29769ebfcfd03a5cca34d10bf2e7740}} 
+\index{bloom.MinHash@{bloom.MinHash}!jaccard@{jaccard}}
+\index{jaccard@{jaccard}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{jaccard()}{jaccard()}}
+{\footnotesize\ttfamily void bloom.\+Min\+Hash.\+jaccard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_a43ada19ac1f8690fc6ff5800fda61eb1}\label{classbloom_1_1MinHash_a43ada19ac1f8690fc6ff5800fda61eb1}} 
+\index{bloom.MinHash@{bloom.MinHash}!minhashing@{minhashing}}
+\index{minhashing@{minhashing}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{minhashing()}{minhashing()}}
+{\footnotesize\ttfamily void bloom.\+Min\+Hash.\+minhashing (\begin{DoxyParamCaption}\item[{Map$<$ String, Array\+List$<$ String $>$$>$}]{players\+Stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_ac90bdbce06be39f4be57b96891a567ce}\label{classbloom_1_1MinHash_ac90bdbce06be39f4be57b96891a567ce}} 
+\index{bloom.MinHash@{bloom.MinHash}!setKeys@{setKeys}}
+\index{setKeys@{setKeys}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{setKeys()}{setKeys()}}
+{\footnotesize\ttfamily void bloom.\+Min\+Hash.\+set\+Keys (\begin{DoxyParamCaption}\item[{Set$<$ String $>$}]{keys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_a892380e53f15a83426a2d2b7eb4865ad}\label{classbloom_1_1MinHash_a892380e53f15a83426a2d2b7eb4865ad}} 
+\index{bloom.MinHash@{bloom.MinHash}!similar@{similar}}
+\index{similar@{similar}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{similar()}{similar()}}
+{\footnotesize\ttfamily void bloom.\+Min\+Hash.\+similar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_acb43d67cc2cd2a936d469e591fcf2ad3}\label{classbloom_1_1MinHash_acb43d67cc2cd2a936d469e591fcf2ad3}} 
+\index{bloom.MinHash@{bloom.MinHash}!string2hash@{string2hash}}
+\index{string2hash@{string2hash}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{string2hash()}{string2hash()}}
+{\footnotesize\ttfamily int bloom.\+Min\+Hash.\+string2hash (\begin{DoxyParamCaption}\item[{String}]{str,  }\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbloom_1_1MinHash_a52674a3888629c927beed153e9c77bec}\label{classbloom_1_1MinHash_a52674a3888629c927beed153e9c77bec}} 
+\index{bloom.MinHash@{bloom.MinHash}!a@{a}}
+\index{a@{a}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily int bloom.\+Min\+Hash.\+a\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Random value to be used in a string to hash function. 
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_a4fb2d424b746bd0295ac97a61f866b55}\label{classbloom_1_1MinHash_a4fb2d424b746bd0295ac97a61f866b55}} 
+\index{bloom.MinHash@{bloom.MinHash}!b@{b}}
+\index{b@{b}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily int bloom.\+Min\+Hash.\+b\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Random value to be used in a string to hash function. 
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_ac9ea9508a7ff0a40cc165151cd1fc19e}\label{classbloom_1_1MinHash_ac9ea9508a7ff0a40cc165151cd1fc19e}} 
+\index{bloom.MinHash@{bloom.MinHash}!jacc@{jacc}}
+\index{jacc@{jacc}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{jacc}{jacc}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} bloom.\+Min\+Hash.\+jacc = new double \mbox{[}500\mbox{]}\mbox{[}500\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_a2d656641bd4312e21a053f9de894b0b9}\label{classbloom_1_1MinHash_a2d656641bd4312e21a053f9de894b0b9}} 
+\index{bloom.MinHash@{bloom.MinHash}!k@{k}}
+\index{k@{k}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily int bloom.\+Min\+Hash.\+k\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_af2b4e5cd2571774ce61737aee5002587}\label{classbloom_1_1MinHash_af2b4e5cd2571774ce61737aee5002587}} 
+\index{bloom.MinHash@{bloom.MinHash}!keys@{keys}}
+\index{keys@{keys}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily Set$<$String$>$ bloom.\+Min\+Hash.\+keys = new Hash\+Set$<$String$>$()\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_a98d26bc934eb16c9accfa49c5947ceab}\label{classbloom_1_1MinHash_a98d26bc934eb16c9accfa49c5947ceab}} 
+\index{bloom.MinHash@{bloom.MinHash}!minimum@{minimum}}
+\index{minimum@{minimum}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{minimum}{minimum}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} bloom.\+Min\+Hash.\+minimum\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classbloom_1_1MinHash_acea000f67958220bf0745fd46378b4e2}\label{classbloom_1_1MinHash_acea000f67958220bf0745fd46378b4e2}} 
+\index{bloom.MinHash@{bloom.MinHash}!p@{p}}
+\index{p@{p}!bloom.MinHash@{bloom.MinHash}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily int bloom.\+Min\+Hash.\+p =1221374\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/bloom/\mbox{\hyperlink{MinHash_8java}{Min\+Hash.\+java}}\end{DoxyCompactItemize}

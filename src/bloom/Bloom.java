@@ -1,7 +1,9 @@
 package bloom;
 
 import static java.lang.Math.*;
-
+/**
+ * Bloom Filter class
+ */
 public class Bloom {
 	int[] bloom;
 	private int k;
@@ -9,10 +11,6 @@ public class Bloom {
 	public Bloom(int bloom, int k) {
 		this.bloom = new int[bloom];
 		this.k=k;
-	}
-
-	public int[] getBloom() {
-		return bloom;
 	}
 	
 	public int[] insert(String[] nomes){

@@ -2,13 +2,17 @@ package bloom;
 
 import java.io.*;
 import java.util.*;
-
+/**
+ * @brief Bloom filter test class
+ */
 public class Teste2 {
-
+	/**
+	 * @brief Main program
+	 */
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		MinHash min = new MinHash(100);
-		File file = new File("u.data"); 
+		File file = new File("docs/u.data"); 
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		Map<String, ArrayList<String>> movies = new HashMap<String, ArrayList<String>>();
 		String str;

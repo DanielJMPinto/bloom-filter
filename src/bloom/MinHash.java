@@ -2,19 +2,27 @@ package bloom;
 
 import java.util.*;
 import static java.lang.Math.*;
-
+/**
+ * @brief The class MinHash is used to test the similarity between two insertions of the bloom filter
+ */
 public class MinHash {
-	private int a, b, p, k, min;
+	/*! @brief Random value to be used in a string to hash function*/
+	private int a;
+	/*! @brief Random value to be used in a string to hash function*/
+	private int b;
+	/*! @brief Value to be used in a string to hash function*/
+	private int p;
+
+	private int k;
 	private int [][] minimum;
 	private double [][] jacc = new double [500][500];
 	Set<String> keys = new HashSet<String>();
 	
+	/**
+	 * @brief Class constructor
+	 */
 	public MinHash(int k) {
 		this.k = k;
-	}
-
-	public Set<String> getKeys() {
-		return keys;
 	}
 
 	public void setKeys(Set<String> keys) {
@@ -96,52 +104,4 @@ public class MinHash {
 			}	
 		}	
 	}
-	
-	public double[][] getJacc() {
-		return jacc;
-	}
-
-	public void setJacc(double[][] jacc) {
-		this.jacc = jacc;
-	}
-
-	public int getA() {
-		return a;
-	}
-
-	public int[][] getMinimum() {
-		return minimum;
-	}
-
-	public void setMinimum(int[][] minimum) {
-		this.minimum = minimum;
-	}
-
-	public void setA(int a) {
-		this.a = a;
-	}
-
-	public int getB() {
-		return b;
-	}
-
-	public void setB(int b) {
-		this.b = b;
-	}
-
-	public int getP() {
-		return p;
-	}
-
-	public void setP(int p) {
-		this.p = p;
-	}
-	
-	public int getMin() {
-		return min;
-	}
-
-	public void setMin(int min) {
-		this.min = min;
-	}	
 }
