@@ -4,27 +4,27 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classbloom_1_1Bloom_a476dd5fc887b2ccf48337382514d2a78}{Bloom}} (int \mbox{\hyperlink{classbloom_1_1Bloom_a761c1f37fbdc28592cb9b38bca23ffdc}{bloom}}, int \mbox{\hyperlink{classbloom_1_1Bloom_af4053a0b594cd15ce4195fad7c3b6c03}{k}})
-\item 
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbloom_1_1Bloom_aa7cde62757087e6040f0bdcb55ae2903}{insert}} (String\mbox{[}$\,$\mbox{]} nomes)
-\item 
+\begin{DoxyCompactList}\small\item\em Inserts the data into the bloom filter. \end{DoxyCompactList}\item 
 int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbloom_1_1Bloom_ae46ea737e3693ca900baccbbc95f67ad}{delete}} (String\mbox{[}$\,$\mbox{]} nomes)
-\item 
+\begin{DoxyCompactList}\small\item\em Deletes data from the bloom filter. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classbloom_1_1Bloom_ab6c1515807bf3b86061bbaf65a0fe941}{string2hash}} (String str)
-\item 
+\begin{DoxyCompactList}\small\item\em Hash function. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classbloom_1_1Bloom_af88e4c4f8e08c292105c4cb12756a656}{count}} (String str)
-\item 
+\begin{DoxyCompactList}\small\item\em Used the count the number of times a string has been inserted in the bloom filter. \end{DoxyCompactList}\item 
 boolean \mbox{\hyperlink{classbloom_1_1Bloom_ad1cadd6cfa04544897998c58b341a996}{check}} (String str)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks if the bloom filter contains a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Package Attributes}
 \begin{DoxyCompactItemize}
 \item 
 int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbloom_1_1Bloom_a761c1f37fbdc28592cb9b38bca23ffdc}{bloom}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classbloom_1_1Bloom}{Bloom}} filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{classbloom_1_1Bloom_af4053a0b594cd15ce4195fad7c3b6c03}{k}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Number of times a string will be inserted in the bloom filter with a different hash value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -39,6 +39,10 @@ int \mbox{\hyperlink{classbloom_1_1Bloom_af4053a0b594cd15ce4195fad7c3b6c03}{k}}
 
 
 
+Class constructor. 
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classbloom_1_1Bloom_ad1cadd6cfa04544897998c58b341a996}\label{classbloom_1_1Bloom_ad1cadd6cfa04544897998c58b341a996}} 
 \index{bloom.Bloom@{bloom.Bloom}!check@{check}}
@@ -46,11 +50,19 @@ int \mbox{\hyperlink{classbloom_1_1Bloom_af4053a0b594cd15ce4195fad7c3b6c03}{k}}
 \doxysubsubsection{\texorpdfstring{check()}{check()}}
 {\footnotesize\ttfamily boolean bloom.\+Bloom.\+check (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Checks if the bloom filter contains a string. 
+
 \mbox{\Hypertarget{classbloom_1_1Bloom_af88e4c4f8e08c292105c4cb12756a656}\label{classbloom_1_1Bloom_af88e4c4f8e08c292105c4cb12756a656}} 
 \index{bloom.Bloom@{bloom.Bloom}!count@{count}}
 \index{count@{count}!bloom.Bloom@{bloom.Bloom}}
 \doxysubsubsection{\texorpdfstring{count()}{count()}}
 {\footnotesize\ttfamily int bloom.\+Bloom.\+count (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used the count the number of times a string has been inserted in the bloom filter. 
 
 \mbox{\Hypertarget{classbloom_1_1Bloom_ae46ea737e3693ca900baccbbc95f67ad}\label{classbloom_1_1Bloom_ae46ea737e3693ca900baccbbc95f67ad}} 
 \index{bloom.Bloom@{bloom.Bloom}!delete@{delete}}
@@ -58,17 +70,29 @@ int \mbox{\hyperlink{classbloom_1_1Bloom_af4053a0b594cd15ce4195fad7c3b6c03}{k}}
 \doxysubsubsection{\texorpdfstring{delete()}{delete()}}
 {\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} bloom.\+Bloom.\+delete (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{nomes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Deletes data from the bloom filter. 
+
 \mbox{\Hypertarget{classbloom_1_1Bloom_aa7cde62757087e6040f0bdcb55ae2903}\label{classbloom_1_1Bloom_aa7cde62757087e6040f0bdcb55ae2903}} 
 \index{bloom.Bloom@{bloom.Bloom}!insert@{insert}}
 \index{insert@{insert}!bloom.Bloom@{bloom.Bloom}}
 \doxysubsubsection{\texorpdfstring{insert()}{insert()}}
 {\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} bloom.\+Bloom.\+insert (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{nomes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Inserts the data into the bloom filter. 
+
 \mbox{\Hypertarget{classbloom_1_1Bloom_ab6c1515807bf3b86061bbaf65a0fe941}\label{classbloom_1_1Bloom_ab6c1515807bf3b86061bbaf65a0fe941}} 
 \index{bloom.Bloom@{bloom.Bloom}!string2hash@{string2hash}}
 \index{string2hash@{string2hash}!bloom.Bloom@{bloom.Bloom}}
 \doxysubsubsection{\texorpdfstring{string2hash()}{string2hash()}}
 {\footnotesize\ttfamily int bloom.\+Bloom.\+string2hash (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Hash function. 
 
 
 
@@ -79,11 +103,19 @@ int \mbox{\hyperlink{classbloom_1_1Bloom_af4053a0b594cd15ce4195fad7c3b6c03}{k}}
 \doxysubsubsection{\texorpdfstring{bloom}{bloom}}
 {\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} bloom.\+Bloom.\+bloom\hspace{0.3cm}{\ttfamily [package]}}
 
+
+
+\mbox{\hyperlink{classbloom_1_1Bloom}{Bloom}} filter. 
+
 \mbox{\Hypertarget{classbloom_1_1Bloom_af4053a0b594cd15ce4195fad7c3b6c03}\label{classbloom_1_1Bloom_af4053a0b594cd15ce4195fad7c3b6c03}} 
 \index{bloom.Bloom@{bloom.Bloom}!k@{k}}
 \index{k@{k}!bloom.Bloom@{bloom.Bloom}}
 \doxysubsubsection{\texorpdfstring{k}{k}}
 {\footnotesize\ttfamily int bloom.\+Bloom.\+k\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of times a string will be inserted in the bloom filter with a different hash value. 
 
 
 

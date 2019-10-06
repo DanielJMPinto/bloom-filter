@@ -9,19 +9,17 @@ The class \mbox{\hyperlink{classbloom_1_1MinHash}{Min\+Hash}} is used to test th
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classbloom_1_1MinHash_aca71435db4eb0d3bd7ff0317ffee3832}{Min\+Hash}} (int \mbox{\hyperlink{classbloom_1_1MinHash_a2d656641bd4312e21a053f9de894b0b9}{k}})
-\item 
-void \mbox{\hyperlink{classbloom_1_1MinHash_ac90bdbce06be39f4be57b96891a567ce}{set\+Keys}} (Set$<$ String $>$ \mbox{\hyperlink{classbloom_1_1MinHash_af2b4e5cd2571774ce61737aee5002587}{keys}})
-\item 
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classbloom_1_1MinHash_a650ee776efc4cbf5b9fa4cf27d3b985f}{iniciarhash}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Function used to generate random values to a and b. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classbloom_1_1MinHash_acb43d67cc2cd2a936d469e591fcf2ad3}{string2hash}} (String str, int \mbox{\hyperlink{classbloom_1_1MinHash_a52674a3888629c927beed153e9c77bec}{a}}, int \mbox{\hyperlink{classbloom_1_1MinHash_a4fb2d424b746bd0295ac97a61f866b55}{b}}, int \mbox{\hyperlink{classbloom_1_1MinHash_acea000f67958220bf0745fd46378b4e2}{p}})
-\item 
+\begin{DoxyCompactList}\small\item\em Hash function. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classbloom_1_1MinHash_a43ada19ac1f8690fc6ff5800fda61eb1}{minhashing}} (Map$<$ String, Array\+List$<$ String $>$$>$ players\+Stats)
-\item 
+\begin{DoxyCompactList}\small\item\em the function \mbox{\hyperlink{classbloom_1_1MinHash_a43ada19ac1f8690fc6ff5800fda61eb1}{minhashing()}} discovers the minimum hash value for a given string \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classbloom_1_1MinHash_ac29769ebfcfd03a5cca34d10bf2e7740}{jaccard}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Makes the jaccard coefficient between two samples. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classbloom_1_1MinHash_a892380e53f15a83426a2d2b7eb4865ad}{similar}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks if two samples are similar. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Package Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,10 +32,10 @@ int \mbox{\hyperlink{classbloom_1_1MinHash_a52674a3888629c927beed153e9c77bec}{a}
 \begin{DoxyCompactList}\small\item\em Random value to be used in a string to hash function. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classbloom_1_1MinHash_a4fb2d424b746bd0295ac97a61f866b55}{b}}
 \begin{DoxyCompactList}\small\item\em Random value to be used in a string to hash function. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classbloom_1_1MinHash_acea000f67958220bf0745fd46378b4e2}{p}} =1221374
-\item 
+int \mbox{\hyperlink{classbloom_1_1MinHash_acea000f67958220bf0745fd46378b4e2}{p}}
+\begin{DoxyCompactList}\small\item\em Value to be used in a string to hash function. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classbloom_1_1MinHash_a2d656641bd4312e21a053f9de894b0b9}{k}}
-\item 
+\begin{DoxyCompactList}\small\item\em Number of cicles used to discover the minimum hash value for a string. \end{DoxyCompactList}\item 
 int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbloom_1_1MinHash_a98d26bc934eb16c9accfa49c5947ceab}{minimum}}
 \item 
 double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbloom_1_1MinHash_ac9ea9508a7ff0a40cc165151cd1fc19e}{jacc}} = new double \mbox{[}500\mbox{]}\mbox{[}500\mbox{]}
@@ -56,6 +54,10 @@ The class \mbox{\hyperlink{classbloom_1_1MinHash}{Min\+Hash}} is used to test th
 
 
 
+Class constructor. 
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classbloom_1_1MinHash_a650ee776efc4cbf5b9fa4cf27d3b985f}\label{classbloom_1_1MinHash_a650ee776efc4cbf5b9fa4cf27d3b985f}} 
 \index{bloom.MinHash@{bloom.MinHash}!iniciarhash@{iniciarhash}}
@@ -63,11 +65,19 @@ The class \mbox{\hyperlink{classbloom_1_1MinHash}{Min\+Hash}} is used to test th
 \doxysubsubsection{\texorpdfstring{iniciarhash()}{iniciarhash()}}
 {\footnotesize\ttfamily void bloom.\+Min\+Hash.\+iniciarhash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Function used to generate random values to a and b. 
+
 \mbox{\Hypertarget{classbloom_1_1MinHash_ac29769ebfcfd03a5cca34d10bf2e7740}\label{classbloom_1_1MinHash_ac29769ebfcfd03a5cca34d10bf2e7740}} 
 \index{bloom.MinHash@{bloom.MinHash}!jaccard@{jaccard}}
 \index{jaccard@{jaccard}!bloom.MinHash@{bloom.MinHash}}
 \doxysubsubsection{\texorpdfstring{jaccard()}{jaccard()}}
 {\footnotesize\ttfamily void bloom.\+Min\+Hash.\+jaccard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Makes the jaccard coefficient between two samples. 
 
 \mbox{\Hypertarget{classbloom_1_1MinHash_a43ada19ac1f8690fc6ff5800fda61eb1}\label{classbloom_1_1MinHash_a43ada19ac1f8690fc6ff5800fda61eb1}} 
 \index{bloom.MinHash@{bloom.MinHash}!minhashing@{minhashing}}
@@ -75,11 +85,9 @@ The class \mbox{\hyperlink{classbloom_1_1MinHash}{Min\+Hash}} is used to test th
 \doxysubsubsection{\texorpdfstring{minhashing()}{minhashing()}}
 {\footnotesize\ttfamily void bloom.\+Min\+Hash.\+minhashing (\begin{DoxyParamCaption}\item[{Map$<$ String, Array\+List$<$ String $>$$>$}]{players\+Stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{classbloom_1_1MinHash_ac90bdbce06be39f4be57b96891a567ce}\label{classbloom_1_1MinHash_ac90bdbce06be39f4be57b96891a567ce}} 
-\index{bloom.MinHash@{bloom.MinHash}!setKeys@{setKeys}}
-\index{setKeys@{setKeys}!bloom.MinHash@{bloom.MinHash}}
-\doxysubsubsection{\texorpdfstring{setKeys()}{setKeys()}}
-{\footnotesize\ttfamily void bloom.\+Min\+Hash.\+set\+Keys (\begin{DoxyParamCaption}\item[{Set$<$ String $>$}]{keys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+the function \mbox{\hyperlink{classbloom_1_1MinHash_a43ada19ac1f8690fc6ff5800fda61eb1}{minhashing()}} discovers the minimum hash value for a given string 
 
 \mbox{\Hypertarget{classbloom_1_1MinHash_a892380e53f15a83426a2d2b7eb4865ad}\label{classbloom_1_1MinHash_a892380e53f15a83426a2d2b7eb4865ad}} 
 \index{bloom.MinHash@{bloom.MinHash}!similar@{similar}}
@@ -87,11 +95,19 @@ The class \mbox{\hyperlink{classbloom_1_1MinHash}{Min\+Hash}} is used to test th
 \doxysubsubsection{\texorpdfstring{similar()}{similar()}}
 {\footnotesize\ttfamily void bloom.\+Min\+Hash.\+similar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Checks if two samples are similar. 
+
 \mbox{\Hypertarget{classbloom_1_1MinHash_acb43d67cc2cd2a936d469e591fcf2ad3}\label{classbloom_1_1MinHash_acb43d67cc2cd2a936d469e591fcf2ad3}} 
 \index{bloom.MinHash@{bloom.MinHash}!string2hash@{string2hash}}
 \index{string2hash@{string2hash}!bloom.MinHash@{bloom.MinHash}}
 \doxysubsubsection{\texorpdfstring{string2hash()}{string2hash()}}
 {\footnotesize\ttfamily int bloom.\+Min\+Hash.\+string2hash (\begin{DoxyParamCaption}\item[{String}]{str,  }\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Hash function. 
 
 
 
@@ -128,6 +144,10 @@ Random value to be used in a string to hash function.
 \doxysubsubsection{\texorpdfstring{k}{k}}
 {\footnotesize\ttfamily int bloom.\+Min\+Hash.\+k\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Number of cicles used to discover the minimum hash value for a string. 
+
 \mbox{\Hypertarget{classbloom_1_1MinHash_af2b4e5cd2571774ce61737aee5002587}\label{classbloom_1_1MinHash_af2b4e5cd2571774ce61737aee5002587}} 
 \index{bloom.MinHash@{bloom.MinHash}!keys@{keys}}
 \index{keys@{keys}!bloom.MinHash@{bloom.MinHash}}
@@ -144,7 +164,11 @@ Random value to be used in a string to hash function.
 \index{bloom.MinHash@{bloom.MinHash}!p@{p}}
 \index{p@{p}!bloom.MinHash@{bloom.MinHash}}
 \doxysubsubsection{\texorpdfstring{p}{p}}
-{\footnotesize\ttfamily int bloom.\+Min\+Hash.\+p =1221374\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily int bloom.\+Min\+Hash.\+p\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Value to be used in a string to hash function. 
 
 
 

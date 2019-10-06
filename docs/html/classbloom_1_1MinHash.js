@@ -4,7 +4,6 @@ var classbloom_1_1MinHash =
     [ "iniciarhash", "classbloom_1_1MinHash.html#a650ee776efc4cbf5b9fa4cf27d3b985f", null ],
     [ "jaccard", "classbloom_1_1MinHash.html#ac29769ebfcfd03a5cca34d10bf2e7740", null ],
     [ "minhashing", "classbloom_1_1MinHash.html#a43ada19ac1f8690fc6ff5800fda61eb1", null ],
-    [ "setKeys", "classbloom_1_1MinHash.html#ac90bdbce06be39f4be57b96891a567ce", null ],
     [ "similar", "classbloom_1_1MinHash.html#a892380e53f15a83426a2d2b7eb4865ad", null ],
     [ "string2hash", "classbloom_1_1MinHash.html#acb43d67cc2cd2a936d469e591fcf2ad3", null ],
     [ "a", "classbloom_1_1MinHash.html#a52674a3888629c927beed153e9c77bec", null ],

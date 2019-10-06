@@ -12,7 +12,7 @@ public class MinHash {
 	private int b;
 	/*! @brief Value to be used in a string to hash function*/
 	private int p;
-
+	/*! @brief Number of cicles used to discover the minimum hash value for a string*/
 	private int k;
 	private int [][] minimum;
 	private double [][] jacc = new double [500][500];
@@ -25,10 +25,9 @@ public class MinHash {
 		this.k = k;
 	}
 
-	public void setKeys(Set<String> keys) {
-		this.keys = keys;
-	}
-
+	/**
+	 * @brief Function used to generate random values to a and b
+	 */
 	public void iniciarhash() {
 		Random gerador = new Random();
 		a=gerador.nextInt();
@@ -36,6 +35,9 @@ public class MinHash {
 		p=1234577;
 	}
 	
+	/**
+	 * @brief Hash function
+	 */
 	public int string2hash(String str, int a, int b, int p) {
 		int hash =0;
 		for (int i=0;i<str.length();i++) {
@@ -44,6 +46,9 @@ public class MinHash {
 		return abs(hash);
 	}
 	
+	/**
+	 * @brief the function minhashing() discovers the minimum hash value for a given string
+	 */
 	public void minhashing(Map<String, ArrayList<String>> playersStats) {
 		keys = playersStats.keySet();
 		minimum= new int[keys.size()][k];
@@ -65,6 +70,9 @@ public class MinHash {
 		jaccard();
 	}
 	
+	/**
+	 * @brief Makes the jaccard coefficient between two samples
+	 */
 	public void jaccard() {
 		jacc=new double[keys.size()][keys.size()];
 		for(int i=0;i<keys.size();i++) {
@@ -80,7 +88,11 @@ public class MinHash {
 		}
 		similar();
 	}
-	
+
+
+	/**
+	 * @brief Checks if two samples are similar
+	 */
 	public void similar() {
 		for(int i=0;i<keys.size();i++) {
 			for(int j=i+1;j<keys.size();j++) {
