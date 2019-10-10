@@ -1,5 +1,5 @@
 # Bloom Filter
-Bloom Filter
+Implementation of a bloom filter using java
 
 # Build the Image
 ```bash
