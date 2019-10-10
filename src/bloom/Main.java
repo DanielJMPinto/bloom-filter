@@ -17,7 +17,7 @@ public class Main {
 		Contador count = new Contador();
 		Map<String, ArrayList<String>> playersStats = new HashMap<String, ArrayList<String>>();
 		
-		File file = new File("docs/players.txt"); 
+		File file = new File("../docs/players.txt"); 
 		BufferedReader br = new BufferedReader(new FileReader(file)); 
 		int c=0;
 		String str;
